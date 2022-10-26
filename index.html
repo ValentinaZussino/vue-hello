@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +10,18 @@
     <title>Hello Vue</title>
 </head>
 <body>
-    <div id="my-title" class="p-4">
+    <div id="my-title" class="p-4 mt-5">
         <h1 class="fw-bold">{{ msgTitle }}</h1>
         <br>
         <p>Write what the image contains</p>
         <br>
         <input v-model="whatImage" type="text" class="w-25">
-        <br> <br>
-        <p>This image contains: {{ whatImage }}</p>
+        <br><br>
+        <p>This image contains: <span class="fw-bold fs-4">{{ whatImage }}</span></p>
         <br>
         <img v-bind:src="image" alt="">
+        <br><br>
+        <button v-on:click ='restart' class="btn btn-outline-warning">Restart</button>
     </div>
 
 
