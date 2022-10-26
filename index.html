@@ -9,11 +9,18 @@
     <title>Hello Vue</title>
 </head>
 <body>
-    <div id="my-title">
+    <div id="my-title" class="p-4">
         <h1>{{ msgTitle }}</h1>
+        <br>
+        <p>write what image do you see</p>
+        <br>
+        <input v-model="whatImage" type="text" class="w-25">
+        <br> <br>
+        <p>{{ whatImage }}</p>
+        <br>
+        <img v-bind:src="image" alt="">
     </div>
 
-    <img src="" alt="">
 
     <!-- js -->
     <script src="./js/script.js"></script>
