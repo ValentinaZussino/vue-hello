@@ -19,9 +19,9 @@
         <br><br>
         <p>This image contains: <span class="fw-bold fs-4">{{ whatImage }}</span></p>
         <br>
-        <img v-bind:src="image" alt="">
+        <img v-bind:src="image" alt="" :class="classImg">
         <br><br>
-        <button v-on:click ='restart' class="btn btn-outline-warning">Restart</button>
+        <button v-on:click ='restart' class="btn btn-outline-warning mt-4">Restart</button>
     </div>
 
 

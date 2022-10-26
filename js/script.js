@@ -8,6 +8,7 @@ const app = createApp({
             msgTitle: 'Hello World !!!',
             whatImage: '',
             image: "https://picsum.photos/300/200?random=1%22%3E",
+            classImg: 'vz_img',
         }
     },
     methods: {
